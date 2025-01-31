@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <style>
+      .myBTN {
+        background-color: yellow;
+        color: blue;
+        border-radius: 3px;
+        padding: 5px 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Form</h1>
+    <a href="./index.html"> <button class="myBTN">Back to Home</button></a>
+    <div>
+      <form class="feedback-form" autocomplete="off">
+        <label class="input">
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label class="input">
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./js/2-form.js" defer></script>
+  </body>
+</html>
