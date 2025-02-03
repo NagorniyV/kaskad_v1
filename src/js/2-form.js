@@ -55,7 +55,7 @@ const subBtn = document.querySelector(`.submit`);
 subBtn.style.width = `95px`;
 subBtn.style.heigth = `24px`;
 subBtn.style.marginLeft = `0px`;
-subBtn.style.backgroundColor = `blue`;
+
 subBtn.style.color = `white`;
 subBtn.style.border = `none`;
 subBtn.style.borderRadius = `3px`;
