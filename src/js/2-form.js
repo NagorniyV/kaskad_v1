@@ -75,23 +75,24 @@ document.addEventListener('DOMContentLoaded', function() {
   inputs.forEach(input => {
     input.style.display = 'block';
     input.style.width = `360px`;
+        input.style.marginTop = `8px`;
   });
 });
 
 
-// ! Функции для проверки перевода на JSON формат
+// // ! Функции для проверки перевода на JSON формат
 
-function saveToLS(key, value) {
-    const jsonData = JSON.stringify(value);
-    localStorage.setItem(key.jsonData);
-}
+// function saveToLS(key, value) {
+//     const jsonData = JSON.stringify(value);
+//     localStorage.setItem(key.jsonData);
+// }
 
-function loadFromLS(key) {
-    const body = localStorage.getItem(key);
-    try {
-        const data = JSON.parse(body);
-        return data;
-    } catch {
-        return body;
-    }
-}
+// function loadFromLS(key) {
+//     const body = localStorage.getItem(key);
+//     try {
+//         const data = JSON.parse(body);
+//         return data;
+//     } catch {
+//         return body;
+//     }
+// }
