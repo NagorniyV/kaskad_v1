@@ -20,7 +20,7 @@ const refs = {
 
 // Сохраняем значение введённых данных в импуты
 
-formData = { email: "", message: "" };
+const formData = { email: "", message: "" };
 
 refs.form.addEventListener('input', (e) => {
     formData.email = e.currentTarget.elements.email.value;
