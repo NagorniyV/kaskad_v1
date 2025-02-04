@@ -37,10 +37,15 @@ feedbackForm.addEventListener(`submit`, (e) => {
     feedbackForm.reset();
 })
 
-const subBtn = document.querySelector(`.submit`);
+// вывод в инпуты данных локального хранилища при перезагрузке страницы
 
-document.addEventListener('DOMContentLoaded', function() {
-  const labels = document.querySelectorAll('.feedback-form label');
-  const inputs = document.querySelectorAll('.feedback-form input, .feedback-form textarea');
-
+window.addEventListener('DOMContentLoaded', () => {
+    const savedData = localStorage.getItem(STORAGE_KEY);
+    if (savedData) {
+        const savedFormData = JSON.parse(savedData);
+        formData.email = savedFormData.email;
+        formData.message = savedFormData.message;
+        refs.form.elements.email.value = formData.email;
+        refs.form.elements.message.value = formData.message;
+    }
 });
