@@ -1,0 +1,138 @@
+.services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-top{
+    display: flex;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 56px;
+    color: white;
+}
+
+.services-subtitle {
+    font-family: "Roboto", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     font-variation-settings:
+       "wdth" 100;
+    font-size: 18px; 
+    color: rgb(180, 180, 189);
+}
+
+.services-carousel {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-bottom: 20px;
+}
+
+.service-card {
+    flex: 0 0 calc(20% - 20px);
+    margin: 0 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #24a7c1;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.details-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #24a7c1;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+
+    font-weight: 500;
+    font-style: normal;
+
+   font-size: 14px; 
+    transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #1d4b75;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 15px;
+    color: #2a6496;
+    outline: none;
+    background-color: #f0f0f0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 1024px) {
+    .service-card {
+        flex: 0 0 calc(33.33% - 20px);
+        /* 3 карточки */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        flex: 0 0 calc(50% - 20px);
+        /* 2 карточки */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        flex: 0 0 calc(100% - 20px);
+        /* 1 карточка */
+    }
+}
