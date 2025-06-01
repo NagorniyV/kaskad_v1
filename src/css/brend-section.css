@@ -1,8 +1,8 @@
-/* Основные стили */
 .brend-section {
-    padding: 20px 30px;
-    background: black;
+    padding-bottom: 28px;
+    background: #101010;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .brend-title {
@@ -89,25 +89,4 @@
         width: 100px;
         height: 50px;
     }
-}
-
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 20px;
-}
-
-.carousel-arrow-left {
-    left: 10px;
-}
-
-.carousel-arrow-right {
-    right: 10px;
 }
